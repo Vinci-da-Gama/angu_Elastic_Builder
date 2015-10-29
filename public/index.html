@@ -14,13 +14,15 @@
 	<script type="text/javascript" language="javascript" src="./metamorphosis/build/js/app-compiled.js"></script>
 	<!-- product js -->
 	<!-- <script type="text/javascript" language="javascript" src="./metamorphosis/_minjs/app.min.js"></script> -->
+	<!-- lib-minify-css -->
+	<link rel="stylesheet" href="./metamorphosis/_mincss/lib-min.css">
 	<!-- product css -->
 	<link rel="stylesheet" href="./metamorphosis/_mincss/app.min.css">
 	<!-- gulp-reload -->
 	<script type="application/javascript" src="http://localhost:35729/livereload.js"></script>
 
 </head>
-<body class="basictorso" ng-app="eblvm">
+<body class="basictorso" data-ng-app="eblvm">
 	<div class="well">Elastic_Builder-LightBox-Validation_match</div>
 	<div>It require angular-recursion and angular-elastic-builder</div>
 	<span class="badge">The elastic is not easy to use, don't use it...</span>
@@ -30,6 +32,9 @@
 
 	<div class="well" ng-controller="ElasticBuilderCtrl">
 		<div data-elastic-builder="elasticBuilderData"></div>
+	</div>
+	<div class="jumbotron">
+		<div class="container" light-box></div>
 	</div>
 </body>
 </html>
